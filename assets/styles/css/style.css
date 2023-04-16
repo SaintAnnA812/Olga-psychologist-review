@@ -2,8 +2,7 @@
 *,
 * ::before,
 * ::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 /* здесь ваши стили для десктопа (компьютер) */
@@ -13,6 +12,157 @@
   width: 100%;
   padding-left: 30px;
   padding-right: 30px;
+}
+
+/*.itc-slider__item {
+    flex: 0 0 auto;
+    width: 50%;
+}*/
+.container__review {
+  /*width: 1440px;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ABA39B;
+}
+
+/*.container__image {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}*/
+.review__input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  width: 300px;
+  justify-content: start;
+  align-items: center;
+  margin: 10px;
+  padding: 20px;
+  gap: 5px;
+  background-color: #EFECE8;
+  border-radius: 10%;
+  float: left;
+}
+
+.input__radio {
+  display: inline;
+}
+
+.text {
+  text-align: center;
+  border-radius: 10%;
+  width: 300px;
+}
+
+.text2 {
+  display: flex;
+  flex-direction: column;
+  align-self: self-end;
+  justify-self: center;
+  width: 50px;
+  border-radius: 10%;
+}
+
+.review__image {
+  width: 5%;
+  height: 5%;
+}
+
+.slide-point {
+  color: #ABA39B;
+}
+
+section {
+  margin: 40px auto;
+  /*width: 450px;*/
+  background-color: #ABA39B;
+  box-shadow: 0 0 3px #cccccc;
+}
+
+/*h1 {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: normal;
+    font-size: 28px;
+}*/
+/*.slider {
+    position: relative;
+}*/
+.slider input[type=radio] {
+  display: none;
+}
+
+.slider-inner {
+  overflow: hidden;
+}
+
+.slider-slides {
+  /*width: 300%;*/
+  transition: transform 0.8s ease;
+  display: flex;
+  /*flex-direction: column;*/
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+}
+
+/*.slider-slides img {
+    float: left;
+    width: 450px;
+    height: 320px;
+}*/
+.slider-controls {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.slider-controls label {
+  display: inline-block;
+  margin: 0 3px;
+  width: 10px;
+  height: 10px;
+  border: 4px solid white;
+  border-radius: 50%;
+  background-color: #EFECE8;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#btn-1:checked ~ .slider-controls label[for=btn-1],
+#btn-2:checked ~ .slider-controls label[for=btn-2],
+#btn-3:checked ~ .slider-controls label[for=btn-3],
+#btn-4:checked ~ .slider-controls label[for=btn-4] {
+  background-color: #666666;
+}
+
+#btn-1:checked ~ .slider-inner .slider-slides {
+  transform: translate(0);
+}
+
+#btn-2:checked ~ .slider-inner .slider-slides {
+  transform: translate(-400px);
+}
+
+#btn-3:checked ~ .slider-inner .slider-slides {
+  transform: translate(-600px);
+}
+
+#btn-4:checked ~ .slider-inner .slider-slides {
+  transform: translate(-800px);
 }
 
 @media (max-width: 1500px) {
@@ -37,4 +187,3 @@
   }
   /* здесь ваши стили для смартфона */
 }
-/*# sourceMappingURL=style.css.map */
