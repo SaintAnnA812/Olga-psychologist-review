@@ -113,10 +113,11 @@ section {
   transition: transform 0.8s ease;
   display: flex;
   /*flex-direction: column;*/
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   justify-content: center;
   align-items: center;
   width: 800px;
+  height: 500px;
 }
 
 /*.slider-slides img {
@@ -154,7 +155,7 @@ section {
 }
 
 #btn-2:checked ~ .slider-inner .slider-slides {
-  transform: translate(-400px);
+  transform: translate(-300px);
 }
 
 #btn-3:checked ~ .slider-inner .slider-slides {
@@ -162,7 +163,7 @@ section {
 }
 
 #btn-4:checked ~ .slider-inner .slider-slides {
-  transform: translate(-800px);
+  transform: translate(-900px);
 }
 
 @media (max-width: 1500px) {
