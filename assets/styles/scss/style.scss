@@ -204,19 +204,7 @@
 
 }*/
 
-.title {
-    @include title;
-    color: $color-dark;
-    background-color: $color-bg-main;
-    height: 50px;
 
-
-}
-
-.text {
-    @include paragraf;
-    color: $color-black;
-}
 
 /* Slider wrapper*/
 .css-slider-wrapper {
@@ -441,18 +429,30 @@
         padding: 0 15px;
     }
 }*/
-.review__container {
+/*.review__container {
     display: flex;
 
     background-color: $color-bg-main;
     height: 100%;
-}
+}*/
 
 #swiper-button-prev,
 #swiper-button-next {
     color: $color-bg-dark;
 }
 
+.title {
+    @include title;
+    color: $color-dark;
+    height: 50px;
+
+
+}
+
+.text {
+    @include paragraf;
+    color: $color-black;
+}
 
 
 
@@ -471,11 +471,17 @@
     /*float: left;*/
 }
 
-#slide {
+#slide,
+#slide1,
+#slide2,
+#slide3,
+#slide4,
+#slide5,
+#slide6,
+#slide7 {
     display: flex;
     flex-direction: row;
     height: 500px;
-    width: 300px !important;
     justify-content: start;
     align-items: center;
     margin: 10px;
@@ -487,10 +493,16 @@
 
 .review__title {
     display: flex;
+    align-content: end;
+
+
 }
 
 
-
+.review-block {
+    background-color: $color-bg-main;
+    height: 100%;
+}
 
 
 

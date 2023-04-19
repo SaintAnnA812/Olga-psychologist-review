@@ -2,10 +2,13 @@ const swiper = new Swiper(".swiper", {
     // Optional parameters
     direction: "horizontal",
     loop: true,
+    grabCursor: true,
+    centeredSlides: true,
 
     // If we need pagination
     pagination: {
         el: ".swiper-pagination",
+        paginationClickable: true,
     },
     // Navigation arrows
     navigation: {
@@ -34,8 +37,8 @@ const swiper = new Swiper(".swiper", {
             spaceBetween: 10,
         },
         // when window width is >= 800px
-        800: {
-            slidesPerView: 2,
+        1000: {
+            slidesPerView: 3,
             spaceBetween: 10,
         },
     },
